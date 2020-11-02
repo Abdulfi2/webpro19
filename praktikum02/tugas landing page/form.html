@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="theme-color" content="#fff">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <!-- style -->
+        <link href="css/style-form.css" rel="stylesheet">
+        <title>Form Membuat akun</title>
+    </head>
+    <body>
+        <div class="konten">
+            <div class="kepala">
+                <div class="lock"></div>
+                <h2 class="judul">Form Pendaftaran</h2>
+            </div>
+            <div class="artikel">
+                <form class="horizontal" action="MemberAccount.html" method="post">
+                    <fieldset>
+                        <legend>Data Keanggotaan</legend>
+                        <div class="grup">
+                            <label for="username">Username/ID<span class="required" >*</span></label>
+                            <input type="text" name="username" required placeholder="Masukkan Username">
+                        </div>
+                        <div class="grup">
+                            <label for="password">Password<span class="required">*</span></label>
+                            <input type="password" name="password" required placeholder="Masukkan password">
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Data Pribadi</legend>
+                        <div class="grup">
+                            <label for="nama">Nama Lengkap<span class="required">*</span></label>
+                            <input type="text" name="Nama" required placeholder="Masukkan Nama Lengkap">
+                        </div>
+                        <div class="grup">
+                            <label for="email">Alamat E-mail<span class="required">*</span></label>
+                            <input type="email" name="email" required placeholder="Masukkan Alamat Email">
+                        </div>
+                        <div class="grup">
+                            <label for="no.telp">No Handphone<span class="required">*</span></label>
+                            <input type="tel" name="No.Hp" pattern="\d\d\d\d\d\d\d\d\d\d\d\d" required placeholder="+62 8xxxxxxxx">
+                        </div>
+                        <div class="grup-offset">
+                            <label for="JK">Jenis Kelamin<span class="required">*</span><br></label>
+                            <input type="radio" name="JK" value="Laki-Laki" required>Laki-laki
+                            <input type="radio" name="JK" value="Perempuan" required>Perempuan
+                        </div>
+                        <div class="grup">
+                            <label for="tujuan">Tujuan</label>
+                            <input type="textarea" name="tujuan" rows="3" cols="10" required placeholder="Tujuan Daftar">
+                        </div>
+                        <div class="grup-offset">
+                            <button type="submit" value="Sign In"><a href="login.html">Submit</a></button>
+                            <button type="reset" value="Reset">Reset</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </body>
+</html

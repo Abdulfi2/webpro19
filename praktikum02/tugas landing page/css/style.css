@@ -1,0 +1,381 @@
+body{
+    width: 100%;
+    height: 100%;
+    background-color: #f0d096;
+}
+
+body, p {
+	color: #000000; 
+	font: 400 1rem/1.5625rem "Open Sans", sans-serif;
+}
+
+.p-large {
+	font: 400 1.125rem/1.625rem "Open Sans", sans-serif;
+}
+
+.p-small {
+	font: 400 0.875rem/1.375rem "Open Sans", sans-serif;
+}
+
+.p-heading {
+	margin-bottom: 3.5rem;
+	text-align: center;
+}
+
+.li-space-lg li {
+	margin-bottom: 0.375rem;
+}
+
+.indent {
+	padding-left: 1.25rem;
+}
+
+h1 {
+	color: #000000;
+	font: 700 2.5rem/3rem "Montserrat", sans-serif;
+}
+
+h2 {
+	color: #484a46;
+	font: 700 1.75rem/2.125rem "Montserrat", sans-serif;
+}
+
+/***************/
+/* gak penting */
+/***************/
+
+.col-lg-12 {
+    margin-right: 3rem;
+    margin-left: 3rem;
+}
+
+/**********/
+/* button */
+/**********/
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: rgb(255, 255, 255);
+    margin: 10px;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+.button:hover span {
+    padding-right: 25px;
+}
+  
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+/*******/
+/* nav */
+/*******/
+.nav{
+    background: #493319;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: all 0.2s;
+}
+
+.nav-desktop{
+    transition: 0.9s;
+    display: flex;
+    padding: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #ebebeb;
+    cursor: pointer;
+    justify-content: space-between;
+    max-width: 820px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.nav-flex-1{
+    display: flex;
+}
+
+.nav-item{
+    margin-right: 16px;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    transition: 0.2s;
+}
+
+.nav-item:hover{
+    color: #bbd0ff;
+}
+
+.nav-MAIN:hover{
+    color: white !important;
+}
+
+.nav-blur-bg-2{
+    top: 0;
+    left: 0;
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    /* backdrop-filter: blur(10px); */
+}
+
+.nav ul{
+    list-style: none;
+    position: relative;
+    display: inline;
+    width: 100%;
+    padding: 0 10px;
+}
+.nav ul li{
+    float: left;
+}
+.nav ul li:hover{
+    background: #f0d096;
+}
+.nav ul li a{
+    display: block;
+    padding: 10px;
+    color:#b19d2d;
+    text-decoration: none;
+
+}
+.nav.ul-right{
+    background: #ffd67e;
+    list-style: none;
+    position: relative;
+    display: inline;
+    width: 100%;
+    padding: 0 10px;
+}
+.nav .ul-right li{
+    float: right;   
+}
+.nav .ul-right li:hover{
+    background: #ffe49a;
+}
+.nav .ul-right li a{
+    display: block;
+    padding: 10px;
+    color: #b19d2d;
+    text-decoration: none;
+}
+
+/**********/
+/* header */
+/**********/
+.header {
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('../images/header.jpg') center center no-repeat;
+    background-size: 100%;
+}
+
+.header .header-content {
+	padding-top: 50px;
+	padding-bottom: 2.125rem;
+	text-align: center;
+}
+
+.header .text-container {
+	margin-bottom: 3rem;
+}
+
+.header h1 {
+    margin-bottom: 0.5rem;
+	color: #f3ba4f;
+}
+
+.header .p-large {
+	margin-bottom: 2rem;
+	color: #f3ba4f;
+}
+
+/*********/
+/* Intro */
+/*********/
+.intro {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #000000;
+    text-decoration: none;
+    text-align: center;
+}
+
+.intro p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+}
+
+
+/********/
+/* Menu */
+/********/
+.gallery {
+    margin: auto;
+}
+.gallery.jpg{
+    margin: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    width: max-content;
+    padding: 5px;
+    float: left;
+    background-color: #ffffff;
+}
+  
+.gallery:hover {
+    border: 1px solid rgb(5, 5, 5);
+}
+.desc {
+    padding: 20px;
+    text-align: center;
+}
+
+/**********/
+/* Daftar */
+/**********/
+.section {
+    background: transparent;
+    position: relative;
+    left: 0;
+    width: 100%;
+    transition: all 0.2s;
+    margin: 10px;
+    padding: 10px   ;
+}
+.section nav{
+    background: transparent;
+    position: relative;
+    display: inline;
+    margin: 10px;
+    padding: 20px;
+    
+}
+.section nav ul li{
+    color: black;  
+}
+.section nav ul li:hover{
+    background: transparent;
+}
+.section nav ul li a{
+    color: #000000;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+}
+
+/**********/
+/* Cabang */
+/**********/
+.cabang {
+    margin: 20px;
+    padding-left: 400px;
+}
+table{
+    border: 2px solid #000000;
+    border-collapse: collapse;
+}
+caption {
+    font-weight: 700;
+}
+
+/*********/
+/* Promo */
+/*********/
+.promo {
+    margin: 20px;
+    padding-left: 310px;
+}
+
+@media (min-width: 100px) {
+    h4 {
+        color: #000000;
+        font: 18px "Montserrat", sans-serif;
+    }
+    h1 {
+        color: #000000;
+        font: 40px "Montserrat", sans-serif;
+    }
+    .nav {
+        font-size: 12px;
+
+    }
+    .header .header-content {
+		padding-top: 50px;
+		padding-bottom: 20px;
+	}
+	.header h1 {
+		font: 700 2.5rem/3rem "Montserrat", sans-serif;
+    }
+    .p-heading {
+        font-size: 16px;
+    }
+    .button {
+        margin: 20px;
+        padding: 5px;
+    }
+    .gallery.jpg{
+        margin: 5px;
+        padding: 2px;
+        float: left;
+        background-color: #ffffff;
+    }
+    .desc {
+        padding: 10px;
+        text-align: center;
+    }
+    .intro {
+        border: 1px solid #000000;
+        text-decoration: none;
+        text-align: center;
+    }
+    .intro p {
+        font-family: "Open Sans", sans-serif;
+        font-size: 12px;
+    }
+    .section {
+        left: 0;
+        width: 100%;
+        margin: 5px;
+        padding: 5px   ;
+    }
+    .section nav{
+        background: transparent;
+        position: relative;
+        display: inline;
+        margin: 10px;
+        padding: 5px;
+        
+    }
+    .section nav ul li{
+        color: black;  
+    }
+    .section nav ul li:hover{
+        background: transparent;
+    }
+    .section nav ul li a{
+        color: #000000;
+        text-decoration: none;
+        padding: 10px;
+        margin: 10px;
+        font: 14px "Montserrat", sans-serif;
+    }
+}
