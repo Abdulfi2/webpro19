@@ -3,27 +3,31 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
         <!-- belajar design web -->
         <!-- membuat landing page -->
- 
         <title>Landing Page</title>
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <!-- nav -->
-        <nav class="nav">
-            <ul>
-                <li><a href="#header">HOME</a></li>
-                <li><a href="#menu">MENU</a></li>
-                <li><a href="#daftar">DAFTAR</a></li>
-                <li><a href="#callMe">CALL ME</a></li>
-                <li><a href="#projects">PROJECTS</a></li>
-            </ul> <!-- end of ul-left -->
-            <ul class="ul-right">
-                <li><a href="login.html">Sign Up</a></li>
-				<li><a href="login.html">Login</a></li>
-            </ul> <!-- end of ul-right --> 
+        <nav class="navbar-custom">
+            <a class="navbar-brand logo-image" href="webdesign.html"><img src="images/logo.jpg" alt="alternative"></a>
+            <a class="navbar-brand logo-text" href="webdesign.html">Qiyu Travel</a>
+            <div class="navbar-custom desktop">
+                <div>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#header">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#menu">MENU</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#daftar">DAFTAR</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#header">ABOUT ME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#header">BANTUAN</a></li>
+                </ul> <!-- end of ul-left -->
+                <ul class="ul-right">
+                    <li class="nav-item-right"><a class="nav-link" href="login.html">Sign Up</a></li>
+				    <li class="nav-item-right"><a class="nav-link" href="login.html">Login</a></li>
+                </ul> <!-- end of ul-right -->
+                </div> 
+            </div>
         </nav> <!-- end of nav -->
         
         <!-- header -->
@@ -50,21 +54,22 @@
         </div> 
         <!-- end of intro -->
      
-        <!-- Daftar -->
-        <section id="daftar">
-            <div class="section">
-            <nav>
-                <h4>Daftar Menu</h4>
-                <ul>
-                    <li><a href="#menu">HOTEL</a></li>
-                    <li><a href="#menu">KAMAR</a></li>
-                    <li><a href="#">PESAWAT</a></li>
-                    <li><a href="cabang">CABANG</a></li>
-                    <li><a href="promo">PROMO</a></li>
-                </ul>
-            </nav>
-        </div></section>
-        <!-- end of Daftar -->
+        <!-- section -->
+        <section id="section">
+            <div class="section1">
+                <div class="text">
+                    <p>Daftar Menu</p>
+                    <ul class="ul-point">
+                        <li class="li-item"><a class="nav-link" href="#menu">HOTEL</a></li>
+                        <li class="li-item"><a class="nav-link" href="#menu">KAMAR</a></li>
+                        <li class="li-item"><a class="nav-link" href="#">PESAWAT</a></li>
+                        <li class="li-item"><a class="nav-link" href="#cabang">CABANG</a></li>
+                        <li class="li-item"><a class="nav-link" href="#promo">PROMO</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- end of section -->
 
         <!-- Menu -->
         <div id="menu" class="gallery">
@@ -145,6 +150,7 @@
         </div>
         <!-- end of Cabang -->
 
+        <!-- Promo -->
         <div id="promo" class="promo">
             <p class="p-heading">
                 <table border="1" cellpadding="5">
@@ -197,5 +203,6 @@
                 </table>
             </p>
         </div>
+        <!-- end of Promo -->
     </body>
 </html>
