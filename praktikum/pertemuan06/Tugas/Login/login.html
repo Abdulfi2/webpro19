@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- RWD -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Judul Web -->
+		<title>Login Form Pendaftaran</title>
+
+		<!-- link CSS -->
+		<link rel="stylesheet" type="text/css" href="css/style-login.css">
+	</head>
+	<body>
+		<div class="login-box">
+			<img src="images/avatar.png" class="avatar">
+			<h1>Login Here</h1>
+			<form id="form_id" method="post" action="../index.html">
+					<label>Username</label> 
+					<input type="text" name="username" id="username" placeholder="Enter Username">
+					<label>Password</label>
+					<input type="password" name="password" id="password" placeholder="Enter Password"><br><br>
+					<input type="button" value="Login" id="submit" onclick="login()"/>
+				<a href="#">Forget Password</a>
+				<p>Belum Punya Akun! <a href="../Form/form.html">Click Here</a></p>
+			</form>
+			<script src="js/login.js"></script>
+		</div>
+	</body>
+</html>
