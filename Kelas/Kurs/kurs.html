@@ -1,0 +1,57 @@
+<html>
+    <head>
+
+        <!-- Judul Web -->
+        <title>kurs Mata Uang</title>
+
+        <!-- RWD -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+
+        <!-- link CSS -->
+        <link rel="stylesheet" href="css/style-kurs.css">
+
+    </head>
+    <body>
+
+        <!-- fieldset -->
+        <fieldset>
+
+            <legend>KursRupiah</legend>
+
+            <!--  table -->
+            <table>
+                
+                <tr>
+                    <td>Nominal</td>
+                    <td>Mata Uang</td>
+                    <td>Rupiah</td>
+                </tr>
+
+                <tr>
+                    <td><input type="number" name="nilaiAwal" id="nilaiAwal"></td>
+
+                    <td>
+                        <select name="kurs" id="kurs">
+                            <option value="USD">$</option>
+                            <option value="DollarSingapore">Dollar singapore</option>
+                            <option value="yen">円</option>
+                            <option value="Euro">Euro</option>
+                            <option value="Riyal">Riyal</option>
+                            <option value="Ringgit">Ringgit Malaysia</option>
+                        </select>
+                    </td>
+
+                    <td><input type="text" name="nilaiAkhir" id="nilaiAkhir"></td>
+                </tr>
+
+            </table>
+            <!-- akhir dari table -->
+
+        </fieldset>
+        <!-- akhir dari fieldset -->
+
+        <!-- script js -->
+        <script src="js/kurs.js"></script>
+    </body>
+</html>

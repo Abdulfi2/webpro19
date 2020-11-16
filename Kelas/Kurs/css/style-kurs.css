@@ -1,0 +1,12 @@
+
+table, th, td {
+    border: 1px solid black;
+    background-color: rgb(155, 247, 247);
+  }
+fieldset{
+    margin: auto;
+    margin-top: 300px;
+    width: max-content;
+    height: max-content;
+    background-color: rgb(166, 252, 194);
+} 
